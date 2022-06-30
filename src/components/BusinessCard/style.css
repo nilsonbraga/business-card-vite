@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #eeeeec;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    width: 320px;
+    height: 509px;
+	border-radius: 10px;
+	box-shadow: 0 8px 40px rgba(#000000, .2);
+    flex-wrap: wrap;
+}
+
+.front {
+    background-image: url('../../assets/img/bg-wavy.svg');
+}
+
+.back {
+    background-image: url('../../assets/img/bg-wavy-back.svg');
+}
+
+.profile {
+    text-transform: uppercase;
+    color: #474747;
+	position: relative;
+    text-align: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 20vmin;
+    height: 20vmin;
+    object-fit: cover;
+    object-position: center;
+    margin: 1.5vmin;
+    transition: all 0.2s ease;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.company-position {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.info {
+    margin: 1em;
+    padding-top: 1em;
+    border-top: dotted 2px rgba(102, 0, 255, 0.05);
+    border-width: 0.6em;
+    line-height: 1.3;
+}
+
+.id-num {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.exp-date {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: auto;
+    height: 30px;
+}
+
+.container-back {
+	position: relative;
+    align-items: center;
+    margin: 1.5em;
+}
+
+.terms-and-conditions h1 {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.terms-and-conditions p {
+    font-size: 13px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.profile-data-back {
+    text-align: center;
+}
+
+.profile-data-back h1 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.profile-data-back p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-back {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-item {
+    position:relative;
+    display: inherit;
+    padding-bottom: 0.5em;
+}
+
+.social-item svg {
+   margin-right: 0.7em;
+   color: #6600ff;
+   font-size: 15px;
+}
+
+.social-item p {
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+

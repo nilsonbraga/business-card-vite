@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 
 import Dashboard from './pages/Dashboard'
-import BusinessCard from './pages/BusinessCard'
+import BusinessCardPage from './pages/BusinessCardPage'
 import DefaultLayout from './layout/DafaultLayout'
 
 
@@ -14,10 +14,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route element={<DefaultLayout />} >
+          {/* <Route element={<DefaultLayout />} > */}
             <Route path='/' element={<Dashboard />} />
-            <Route path='/businesscard' element={<BusinessCard />} />
-          </Route>
+            <Route path='/businesscardpage' element={<BusinessCardPage />} />
+          {/* </Route> */}
       </Routes>
     </BrowserRouter>
   );

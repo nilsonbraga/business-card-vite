@@ -7,7 +7,7 @@ const Nav = () => (
         <Link to="/">Dashboard</Link>
       </li>
       <li>
-        <Link to="/businesscard">Business Card</Link>
+        <Link to="/businesscardpage">Business Card</Link>
       </li>
     </ul>
     <Outlet />
