@@ -7,7 +7,7 @@ import {
     FaMapMarkedAlt
 } from 'react-icons/fa';
 
-const BusinessCard = () => {
+const BusinessCard = (props) => {
     return (
         <div className='container'>
             <div className='business-card front'>
@@ -16,17 +16,17 @@ const BusinessCard = () => {
                         <img src={photo} alt="" />
                     </div>
                     <div className='name'>
-                        Nilson Braga
+                        {props.name}
                     </div>
                     <div className='company-position'>
-                        Fullstack Developer
+                        {props.position}
                     </div>
                     <div className='info'>
                         <div className='id-num'>
-                            id nº 0188084614
+                            {'id nº ' + props.id}
                         </div>  
                         <div className='exp-date'>
-                            Valid Thru: 12/22
+                            {'Valid Thru: ' + props.expDate}
                         </div>  
                     </div>
                 </div>
@@ -41,37 +41,37 @@ const BusinessCard = () => {
                 <div className='container-back'>
                     <div className='terms-and-conditions'>
                         <h1>
-                            Terms and Conditions
+                            {props.tcTitle}
                         </h1>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae eleifend justo. Aenean tincidunt turpis eu rhoncus pulvinar. Mauris volutpat vehicula.
+                            {props.pBack ? props.pBack : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae eleifend justo. Aenean tincidunt turpis eu rhoncus pulvinar. Mauris volutpat vehicula."}
                         </p>
                     </div>
                     
                 </div>
                 <div className='profile-data-back'>
                     <h1>
-                        id nº 0188084614
+                        {props.id}
                     </h1>
                     <p>
-                        Join Date: 01/22
+                        {'Join Date: ' + props.join}
                     </p>
                     <p>
-                        Valid Thru: 01/22
+                        {'Valid Thru: ' + props.expDate}
                     </p>
                 </div>
                 <div className='footer-back'>
                     <div className='social-item'>
                         <FaGlobe />
-                        <p>www.github.com/nilsonbraga</p>
+                        <p>{props.website}</p>
                     </div>
                     <div className='social-item'>
                         <FaPhone />
-                        <p>+55 11 9999-9999</p>
+                        <p>{props.phone}</p>
                     </div>
                     <div className='social-item'>
                         <FaMapMarkedAlt />
-                        <p>South America</p>
+                        <p>{props.address}</p>
                     </div>
                 </div>
             </div>
