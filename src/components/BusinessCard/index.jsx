@@ -13,7 +13,7 @@ const BusinessCard = (props) => {
             <div className='business-card front'>
                 <div className='profile'>
                     <div className='photo'>
-                        <img src={photo} alt="" />
+                        <img src={props.avatarData} alt="" />
                     </div>
                     <div className='name'>
                         {props.name}
@@ -32,7 +32,7 @@ const BusinessCard = (props) => {
                 </div>
                 <div className='business-card-footer'>
                     <div className='logo'>
-                        <img src={logo} alt="" />
+                        <img src={props.logoData} alt="" />
                     </div>
                 </div>
             </div>

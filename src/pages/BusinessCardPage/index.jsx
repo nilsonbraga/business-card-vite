@@ -2,9 +2,15 @@ import React, { useState, useEffect } from 'react';
 import BusinessCard from "../../components/BusinessCard";
 import BusinessCardForm from "../../components/BusinessCardForm";
 
+
+import photo from '../../assets/img/profile2.png';
+import logoimg from '../../assets/img/logo.png';
+
 export default function BusinessCardPage() {
-    const [avatar, setAvatar] = useState([]);
-    const [logo, setLogo] = useState([]);
+    const [avatar, setAvatar] = useState(null);
+    const [avatarData, setAvatarData] = useState(photo);
+    const [logo, setLogo] = useState(null);
+    const [logoData, setLogoData] = useState(logoimg);
     const [name, setName] = useState(['Nilson']);
     const [position, setPosition] = useState(['Fullstack Developer']);
     const [id, setId] = useState(['0188084614']);
@@ -16,10 +22,38 @@ export default function BusinessCardPage() {
     const [phone, setPhone] = useState(['+55 11 99999999']);
     const [address, setAddress] = useState(['South America']);
 
+
+
+    const onChangeAvatar = e => {
+        if (e.target.files[0]) {
+          console.log("avatar: ", e.target.files);
+          setAvatar(e.target.files[0]);
+          const reader = new FileReader();
+          reader.addEventListener("load", () => {
+            setAvatarData(reader.result);
+          });
+          reader.readAsDataURL(e.target.files[0]);
+        }
+      };
+
+      const onChangeLogo = e => {
+        if (e.target.files[0]) {
+          console.log("logo: ", e.target.files);
+          setLogo(e.target.files[0]);
+          const reader = new FileReader();
+          reader.addEventListener("load", () => {
+            setLogoData(reader.result);
+          });
+          reader.readAsDataURL(e.target.files[0]);
+        }
+      };
+
     return (
         <div className='container'>
 
             <BusinessCard 
+                avatarData={avatarData}
+                logoData={logoData}
                 name={name} 
                 position={position} 
                 id={id} 
@@ -35,10 +69,10 @@ export default function BusinessCardPage() {
             <div className='container'>
             <div className='business-card-form'>
                 <span>
-                    <input name='avatar' type="file" value={avatar} onChange={e => setAvatar(e.target.value)} />
+                    <input name='avatar' type="file" onChange={onChangeAvatar} />
                 </span>
                 <span>
-                    <input name='logo' type="file" value={logo} onChange={e => setLogo(e.target.value)}/>
+                    <input name='logo' type="file" onChange={onChangeLogo} />
                 </span>
                 <span>
                     <label htmlFor="name">Name</label>
