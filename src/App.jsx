@@ -14,10 +14,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-          {/* <Route element={<DefaultLayout />} > */}
+          <Route element={<DefaultLayout />} >
             <Route path='/' element={<Dashboard />} />
             <Route path='/businesscardpage' element={<BusinessCardPage />} />
-          {/* </Route> */}
+          </Route>
       </Routes>
     </BrowserRouter>
   );

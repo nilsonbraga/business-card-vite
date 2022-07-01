@@ -1,8 +1,10 @@
 import BusinessCard from "../../components/BusinessCard";
+import BusinessCardForm from "../../components/BusinessCardForm";
 
 const BusinessCardPage = () => (
-    <div>
+    <div className='container'>
         <BusinessCard />
+        <BusinessCardForm />
     </div>
 );
 
