@@ -9,7 +9,7 @@ import {
 
 const BusinessCard = (props) => {
     return (
-        <div className='container'>
+        <div>
             <div className='business-card front'>
                 <div className='profile'>
                     <div className='photo'>
