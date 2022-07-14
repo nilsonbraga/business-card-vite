@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './style.css';
 
 export default function BusinessCardForm() {
     const [avatar, setAvatar] = useState([]);
@@ -16,8 +15,8 @@ export default function BusinessCardForm() {
     const [address, setAddress] = useState([]);
 
     return (
-        <div className='container'>
-            <div className='business-card-form'>
+        <>
+            <div>
                 <span>
                     <input name='avatar' type="file" value={avatar} onChange={e => setAvatar(e.target.value)} />
                 </span>
@@ -66,6 +65,6 @@ export default function BusinessCardForm() {
                 </span>
                 
             </div>
-        </div>
+        </>
     )
 }

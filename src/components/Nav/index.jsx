@@ -5,7 +5,7 @@ const Nav = () => (
     <nav>
       <div class="container mx-auto px-6 py-2 flex justify-between items-center">
         <div class="navbar bg-base-100">
-          <div class="flex-1">
+              <div class="flex-1">
                   <a class="btn btn-ghost normal-case text-xl">Business Card Generator</a>
               </div>
               <div class="flex-none">
