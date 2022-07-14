@@ -189,7 +189,7 @@ export default function BusinessCardForm(props) {
               id="dropzone-file"
               type="file"
               className="hidden"
-              name="avatar"
+              name="logo"
               onChange={props.onChangeLogo}
             />
           </label>
