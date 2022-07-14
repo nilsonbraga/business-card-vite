@@ -49,8 +49,8 @@ export default function BusinessCardPage() {
       };
 
     return (
-        <div className='flex justify-around'>
-
+        <div className='flex flex-row justify-between'>
+            <div class="basis-1/2">
                 <BusinessCard 
                     avatarData={avatarData}
                     logoData={logoData}
@@ -65,7 +65,8 @@ export default function BusinessCardPage() {
                     phone={phone}
                     address={address}
                 />
-        
+            </div>
+            <div class="basis-1/2">
             
                 <div className='business-card-form'>
                     <span>
@@ -116,6 +117,7 @@ export default function BusinessCardPage() {
                     </span>
                 
                 </div>
+            </div>
         </div>
     )
 }

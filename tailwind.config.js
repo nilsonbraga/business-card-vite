@@ -4,7 +4,9 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    container: {
+      padding: '3rem',
+    },
   },
   plugins: [require("daisyui")],
   // daisyUI config (optional)
