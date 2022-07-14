@@ -9,7 +9,7 @@ import {
 
 const BusinessCard = (props) => {
     return (
-        <div>
+        <div className="flex flex-row justify-start gap-3">
             <div className='business-card front'>
                 <div className='profile'>
                     <div className='photo'>

@@ -48,7 +48,7 @@ export default function BusinessCardPage() {
       };
 
     return (
-        <div className='flex flex-row justify-between'>
+        <div className='flex flex-row justify-between gap-8'>
             <div class="basis-1/2">
                 <BusinessCard 
                     avatarData={avatarData}
