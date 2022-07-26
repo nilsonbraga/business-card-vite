@@ -17,7 +17,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Name"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.name}
               onChange={(e) => props.setName(e.target.value)}
             />
@@ -27,7 +27,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Position"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.position}
               onChange={(e) => props.setPosition(e.target.value)}
             />
@@ -42,7 +42,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Id Number"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.id}
               onChange={(e) => props.setId(e.target.value)}
             />
@@ -53,7 +53,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Valid Thru"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.expDate}
               onChange={(e) => props.setExpDate(e.target.value)}
             />
@@ -68,7 +68,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Title Back"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.tcTitle}
               onChange={(e) => props.setTcTitle(e.target.value)}
             />
@@ -79,7 +79,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="text.."
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.pBack}
               onChange={(e) => props.setPBack(e.target.value)}
             />
@@ -94,7 +94,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Join Date"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.join}
               onChange={(e) => props.setJoin(e.target.value)}
             />
@@ -105,7 +105,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Website"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.website}
               onChange={(e) => props.setWebsite(e.target.value)}
             />
@@ -116,7 +116,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="phone"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.phone}
               onChange={(e) => props.setPhone(e.target.value)}
             />
@@ -127,7 +127,7 @@ export default function BusinessCardForm(props) {
             <input
               type="text"
               placeholder="Address"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               value={props.address}
               onChange={(e) => props.setAddress(e.target.value)}
             />
