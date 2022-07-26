@@ -7,9 +7,14 @@ const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps 
 
     return (
         <div>
-            <ul class="steps">
-                {listSteps}
-            </ul>
+            <>
+                <div className="flex flex-row">
+                    <ul class="steps">
+                        {listSteps}
+                    </ul>
+                </div>
+            </>
+
             {currentStep <= numSteps && (
                 <>
                 {currentStep > 1 && (
@@ -32,12 +37,14 @@ const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps 
             {currentStep < numSteps && (
                 <>
                     <br />
-                    <button class="btn btn-primary"
-                        onClick={nextFormStep}
-                        type="button"
-                        >
-                        Next
-                    </button>
+                    <div className="flex flex-row gap-2">
+                        <button class="btn btn-primary"
+                            onClick={nextFormStep}
+                            type="button"
+                            >
+                            Next
+                        </button>
+                    </div>
                 </>
             )}
         </div>
