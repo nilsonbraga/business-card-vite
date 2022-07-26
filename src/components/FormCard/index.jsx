@@ -1,30 +1,44 @@
-const FormCard = ({ children, currentStep, prevFormStep, nextFormStep }) => {
+const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps }) => {
+
+
+    const listSteps = [...Array(numSteps)].map((e, i) =>
+        <li class={`step ${i < currentStep ? 'step-primary' : ''}`}></li>
+    );
+
     return (
         <div>
-            {currentStep < 4 && (
+            <ul class="steps">
+                {listSteps}
+            </ul>
+            {currentStep <= numSteps && (
                 <>
-                {currentStep > 0 && (
+                {currentStep > 1 && (
                     <button
                         onClick={prevFormStep}
+                        class="btn btn-primary"
                         type="button"
                         >
                         back
                     </button>
                 )}
 
-                <span>Step {currentStep + 1} of 4 </span>
+               
                 </>
             )}
+
             
             {children}
 
-            {currentStep < 3 && (
-                <button
-                    onClick={nextFormStep}
-                    type="button"
-                    >
-                    Next
-                </button>
+            {currentStep < numSteps && (
+                <>
+                    <br />
+                    <button class="btn btn-primary"
+                        onClick={nextFormStep}
+                        type="button"
+                        >
+                        Next
+                    </button>
+                </>
             )}
         </div>
     )

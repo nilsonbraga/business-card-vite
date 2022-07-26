@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import FormCard from '../FormCard';
 
 export default function BusinessCardForm(props) {
-    const [formStep, setFormStep] = useState(0);
+    const [formStep, setFormStep] = useState(1);
     const nextFormStep = () => setFormStep((currentStep) => currentStep + 1);
     const prevFormStep = () => setFormStep((currentStep) => currentStep - 1);
+    const numSteps = 5;
 
     return (
-      <FormCard className="form-control" currentStep={formStep} prevFormStep={prevFormStep} nextFormStep={nextFormStep}>
-        {formStep == 0 && (
+      <FormCard className="form-control" currentStep={formStep} prevFormStep={prevFormStep} nextFormStep={nextFormStep} numSteps={numSteps}>
+        {formStep == 1 && (
           <>
             <label className="label">
               <span className="label-text">Name</span>
@@ -33,7 +34,7 @@ export default function BusinessCardForm(props) {
           </>
         )}
 
-        {formStep == 1 && (
+        {formStep == 2 && (
           <>
             <label className="label">
               <span className="label-text">Id Number</span>
@@ -59,7 +60,7 @@ export default function BusinessCardForm(props) {
           </>
         )}
 
-        {formStep == 2 && (
+        {formStep == 3 && (
           <>
             <label className="label">
               <span className="label-text">Title Back</span>
@@ -85,7 +86,7 @@ export default function BusinessCardForm(props) {
           </>
         )}
 
-        {formStep == 3 && (
+        {formStep == 4 && (
           <>
             <label className="label">
               <span className="label-text">Join Date</span>
@@ -133,7 +134,7 @@ export default function BusinessCardForm(props) {
           </>
         )}
 
-        {formStep >= 3 && (
+        {formStep >= 5 && (
           <>
             <label className="label">
               <span className="label-text">Photo</span>
