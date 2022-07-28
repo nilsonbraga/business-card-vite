@@ -14,7 +14,7 @@ export default function BusinessCardPage() {
     const [avatarData, setAvatarData] = useState(photo);
     const [logo, setLogo] = useState(null);
     const [logoData, setLogoData] = useState(logoimg);
-    const [name, setName] = useState(['Nilson']);
+    const [name, setName] = useState(['Nilson Braga']);
     const [position, setPosition] = useState(['Fullstack Developer']);
     const [id, setId] = useState(['0188084614']);
     const [expDate, setExpDate] = useState(['12/22']);
