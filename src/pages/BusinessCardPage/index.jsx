@@ -66,7 +66,7 @@ export default function BusinessCardPage() {
                     address={address}
                 />
             </div>
-            <div className="basis-1/2">
+            <div className="flex flex-col basis-1/2 justify-between">
                 <BusinessCardForm 
                     avatarData={avatarData}
                     logoData={logoData}

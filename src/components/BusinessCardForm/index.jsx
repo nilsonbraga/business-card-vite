@@ -142,7 +142,7 @@ export default function BusinessCardForm(props) {
             <div className="flex justify-center items-center w-full">
               <label
                 for="dropzone-file"
-                className="flex flex-col justify-center items-center w-full h-30 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer dark:hover:bg-bray-100 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-100"
+                className="flex flex-col justify-center items-center w-full h-30 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer dark:hover:bg-base-300 hover:bg-base-300 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-base-300"
               >
                 <div className="flex flex-col justify-center items-center pt-5 pb-6">
                   <svg
@@ -181,8 +181,8 @@ export default function BusinessCardForm(props) {
             </label>
             <div className="flex justify-center items-center w-full">
               <label
-                for="dropzone-file"
-                className="flex flex-col justify-center items-center w-full h-30 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer dark:hover:bg-bray-100 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-100"
+                for="dropzone-file-2"
+                className="flex flex-col justify-center items-center w-full h-30 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer dark:hover:bg-base-300 hover:bg-base-300 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-base-300"
               >
                 <div className="flex flex-col justify-center items-center pt-5 pb-6">
                   <svg
@@ -207,7 +207,7 @@ export default function BusinessCardForm(props) {
                   <p className="text-xs text-gray-500 dark:text-gray-400">your LOGO</p>
                 </div>
                 <input
-                  id="dropzone-file"
+                  id="dropzone-file-2"
                   type="file"
                   className="hidden"
                   name="logo"

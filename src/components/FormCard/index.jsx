@@ -2,19 +2,20 @@ const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps 
 
 
     const listSteps = [...Array(numSteps)].map((e, i) =>
-        <li class={`step ${i < currentStep ? 'step-primary' : ''}`}></li>
+        <li className={`step ${i < currentStep ? 'step-primary' : ''}`}></li>
     );
 
     return (
             <>
-                <div className="flex flex-row">
-                    <ul class="steps">
-                        {listSteps}
-                    </ul>
+                <div>
+                    <div className="flex flex-row p-2">
+                        <ul className="steps w-full">
+                            {listSteps}
+                        </ul>
+                    </div>
+                
+                    {children}
                 </div>
-            
-            
-                {children}
                 <div className='flex justify-start gap-2'>
                     <div>
                         {currentStep <= numSteps && (
@@ -22,7 +23,7 @@ const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps 
                             {currentStep > 1 && (
                                 <button
                                     onClick={prevFormStep}
-                                    class="btn btn-primary"
+                                    className="btn btn-primary"
                                     type="button"
                                     >
                                     back
@@ -36,7 +37,7 @@ const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps 
                         {currentStep < numSteps && (
                             <>
                                 <div className="flex flex-row gap-2">
-                                    <button class="btn btn-primary"
+                                    <button className="btn btn-primary"
                                         onClick={nextFormStep}
                                         type="button"
                                         >
@@ -47,7 +48,7 @@ const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps 
                         )}
                     </div>
                 </div>
-        </>
+            </>
     )
 }
 

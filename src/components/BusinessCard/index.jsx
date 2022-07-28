@@ -1,6 +1,4 @@
 import './style.css';
-import photo from '../../assets/img/profile2.png';
-import logo from '../../assets/img/logo.png';
 import {
     FaGlobe,
     FaPhone,
