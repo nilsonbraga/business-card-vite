@@ -11,7 +11,7 @@ const Nav = () => (
               <div className="flex-none">
                 
                   <ul className="menu menu-horizontal p-2 gap-2">
-                    <li><label for="my-modal-3" class="btn modal-button">Info</label></li>
+                    <li><label htmlFor="my-modal-3" className="btn modal-button">Info</label></li>
                     <li><Link to="/businesscardpage" className="btn">Business Card</Link></li>
                   </ul>
               </div>
@@ -23,12 +23,12 @@ const Nav = () => (
       <Outlet />
     </main>
     
-    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
-    <div class="modal">
-      <div class="modal-box relative">
-        <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-        <h3 class="text-lg font-bold">Desenvolvido por Nilson Braga</h3>
-        <p class="py-4">Veja mais em meu GitHub</p>
+    <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+    <div className="modal">
+      <div className="modal-box relative">
+        <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+        <h3 className="text-lg font-bold">Desenvolvido por Nilson Braga</h3>
+        <p className="py-4">Veja mais em meu GitHub</p>
       </div>
     </div>
 

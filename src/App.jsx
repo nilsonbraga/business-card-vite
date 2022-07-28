@@ -5,7 +5,6 @@ import {
   Routes
 } from 'react-router-dom'
 
-import Dashboard from './pages/Dashboard'
 import BusinessCardPage from './pages/BusinessCardPage'
 import DefaultLayout from './layout/DafaultLayout'
 
@@ -15,7 +14,6 @@ export default function App() {
     <BrowserRouter>
       <Routes>
           <Route element={<DefaultLayout />} >
-            <Route path='/' element={<Dashboard />} />
             <Route path='/businesscardpage' element={<BusinessCardPage />} />
           </Route>
       </Routes>

@@ -2,7 +2,7 @@ const FormCard = ({ children, currentStep, prevFormStep, nextFormStep, numSteps 
 
 
     const listSteps = [...Array(numSteps)].map((e, i) =>
-        <li className={`step ${i < currentStep ? 'step-primary' : ''}`}></li>
+        <li key={i} className={`step ${i < currentStep ? 'step-primary' : ''}`}></li>
     );
 
     return (
