@@ -8,7 +8,9 @@ import {
 const BusinessCard = (props) => {
     return (
         <div className="flex flex-row justify-start gap-3">
-            <div className='business-card front'>
+            <div className='business-card front' 
+                style={{backgroundImage: `url(${props.bgData})`}}
+            >
                 <div className='profile'>
                     <div className='photo'>
                         <img src={props.avatarData} alt="" />
@@ -35,7 +37,9 @@ const BusinessCard = (props) => {
                 </div>
             </div>
 
-            <div className='business-card back'>
+            <div className='business-card back' 
+                style={{backgroundImage: `url(${props.bgData})`}}
+            >
                 <div className='container-back'>
                     <div className='terms-and-conditions'>
                         <h1>

@@ -14,11 +14,13 @@
 }
 
 .front {
-    background-image: url('../../assets/img/bg-wavy.svg');
+    background-color: hsl(var(--sc));
+    /*background-image: url('../../assets/img/bg-wavy.svg');*/
 }
 
 .back {
-    background-image: url('../../assets/img/bg-wavy-back.svg');
+    background-color: hsl(var(--sc));
+    /*background-image: url('../../assets/img/bg-wavy-back.svg');*/
 }
 
 .profile {
