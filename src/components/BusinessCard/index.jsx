@@ -7,7 +7,7 @@ import {
 
 const BusinessCard = (props) => {
     return (
-        <div className="flex flex-row justify-start gap-3">
+        <div className="flex flex-row justify-start gap-3 flex-wrap">
             <div className='business-card front' 
                 style={{backgroundImage: `url(${props.bgData})`}}
             >

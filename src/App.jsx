@@ -14,7 +14,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
           <Route element={<DefaultLayout />} >
-            <Route path='/businesscardpage' element={<BusinessCardPage />} />
+            <Route path='/' element={<BusinessCardPage />} />
           </Route>
       </Routes>
     </BrowserRouter>

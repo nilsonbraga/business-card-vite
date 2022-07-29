@@ -64,7 +64,7 @@ export default function BusinessCardPage() {
       };
 
     return (
-        <div className='flex flex-row justify-between gap-8'>
+        <div className='flex flex-row justify-between flex-wrap'>
             <div className="basis-1/2">
                 <BusinessCard 
                     avatarData={avatarData}
